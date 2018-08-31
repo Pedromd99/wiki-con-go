@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <h1>{{.Titulo}}</h1>
+  <p>[<a href="/edit/{{.Titulo}}">edit</a>]</p>
+  <p>[<a href="/new/"></a>]</p>
+  <div>
+    {{printf "%s" .Cuerpo}}
+  </div>
+  <div>
+    [<a style="visibility: {{.Visibilidad_A}};" href="/view/{{.Anterior}}">Anterior</a>]
+    [<a href="/view/{{.Siguiente}}" style="visibility: {{.Visibilidad_S}}">Siguiente</a>]
+  </div>
+  </body>
+</html>
